@@ -1,0 +1,10 @@
+fun main() {
+    // Step 1: Create an array of 5 names
+    val names = arrayOf("Alice", "Bob", "Charlie", "Diana", "Eve")
+
+    // Step 2: Loop through the array using a for loop
+    for (name in names) {
+        // Step 3: Print a greeting for each name
+        println("Hello, $name")
+    }
+}
