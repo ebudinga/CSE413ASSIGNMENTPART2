@@ -1,0 +1,28 @@
+// Function to calculate the sum of two integers
+fun sum(a: Int, b: Int): Int {
+    return a + b  // Returns the sum of 'a' and 'b'
+}
+
+fun main() {
+    // Example 1: Sum of 5 and 3
+    val result1 = sum(5, 3)  // Calls 'sum' with arguments 5 and 3
+    println("5 + 3 = $result1")  // Prints the result using string interpolation
+
+    // Example 2: Sum of 10 and 7
+    val result2 = sum(10, 7)  // Calls 'sum' with arguments 10 and 7
+    println("10 + 7 = $result2")
+
+    // Example 3: Sum of user-input values
+    print("Enter first number: ")
+    val num1 = readLine()?.toIntOrNull()  // Reads first input (or null if invalid)
+    print("Enter second number: ")
+    val num2 = readLine()?.toIntOrNull()  // Reads second input (or null if invalid)
+
+    // Checks if inputs are valid before calculating
+    if (num1 != null && num2 != null) {
+        val result3 = sum(num1, num2)  // Calls 'sum' with user inputs
+        println("$num1 + $num2 = $result3")
+    } else {
+        println("Invalid input. Please enter valid numbers.")
+    }
+}
