@@ -1,0 +1,21 @@
+// Function to check if a number is even or odd
+fun main() {
+    // Prompt the user to enter a number
+    print("Enter a number: ")
+    
+    // Read the input as a string and convert it to an integer (or null if invalid)
+    val input = readLine()?.toIntOrNull()
+
+    // Check if the input is valid (not null)
+    if (input != null) {
+        // Determine if the number is even or odd using modulo (%)
+        if (input % 2 == 0) {
+            println("$input is an even number.")
+        } else {
+            println("$input is an odd number.")
+        }
+    } else {
+        // Handle invalid input (non-numeric)
+        println("Invalid input. Please enter a valid number.")
+    }
+}
