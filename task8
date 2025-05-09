@@ -1,0 +1,37 @@
+// Base class Person
+open class Person(
+    val name: String,  // Property: name of the person
+    val age: Int       // Property: age of the person
+) {
+    // Method to display person details
+    fun displayPersonDetails() {
+        println("Name: $name")
+        println("Age: $age")
+    }
+}
+
+// Derived class Student inheriting from Person
+class Student(
+    name: String,      // Inherited from Person
+    age: Int,          // Inherited from Person
+    val grade: String  // Additional property: student's grade
+) : Person(name, age) {  // Calling Person's constructor
+    
+    // Method to display all student details
+    fun displayStudentDetails() {
+        displayPersonDetails()  // Call parent class method
+        println("Grade: $grade")
+    }
+}
+
+fun main() {
+    // Create a Person object
+    println("Person Details:")
+    val person = Person("John Doe", 30)
+    person.displayPersonDetails()
+    
+    println("\nStudent Details:")
+    // Create a Student object
+    val student = Student("Usman Haladu", 21, "A+")
+    student.displayStudentDetails()
+}
