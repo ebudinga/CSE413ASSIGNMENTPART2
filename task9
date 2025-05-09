@@ -1,0 +1,23 @@
+fun main() {
+    // Step 1: Create a map of student names (keys) to their scores (values)
+    val studentScores = mapOf(
+        "Usman Haladu" to 85,
+        "Alice Smith" to 68,
+        "Bob Johnson" to 72,
+        "Carol Williams" to 91,
+        "David Brown" to 55
+    )
+
+    // Step 2: Print all students and their scores
+    println("All Students and Scores:")
+    studentScores.forEach { (name, score) ->
+        println("$name: $score")
+    }
+
+    // Step 3: Filter and print students who scored above 70
+    println("\nStudents with Scores > 70:")
+    studentScores.filter { (_, score) -> score > 70 }  // Filter entries where score > 70
+        .forEach { (name, score) ->                   // Iterate through filtered results
+            println("$name: $score")                  // Print name and score
+        }
+}
