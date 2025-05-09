@@ -1,0 +1,15 @@
+fun main() {
+    // Part 1: Print numbers from 1 to 10 using a for loop
+    println("Numbers from 1 to 10:")
+    for (i in 1..10) {  // Loop from 1 to 10 (inclusive)
+        println(i)      // Print current number (i)
+    }
+
+    // Part 2: Print only even numbers from 1 to 20
+    println("\nEven numbers from 1 to 20:")
+    for (i in 1..20) {          // Loop from 1 to 20 (inclusive)
+        if (i % 2 == 0) {       // Check if 'i' is even (divisible by 2)
+            println(i)          // Print even numbers only
+        }
+    }
+}
